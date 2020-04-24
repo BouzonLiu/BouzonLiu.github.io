@@ -1,312 +1,323 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Home</title>
-		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="js/jquery.min.js"></script>
-		 <!-- Custom Theme files -->
-		<link href="css/style.css" rel='stylesheet' type='text/css' />
-		<style type="text/css">
-		body,td,th {
-	font-family: HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="gb2312">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>鑫镔金鹏家居 用心更舒心</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Favicons
+    ================================================== -->
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+<!-- Stylesheet
+    ================================================== -->
+<link rel="stylesheet" type="text/css"  href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
+<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+<style type="text/css">
+body,td,th {
+	font-family: Roboto, sans-serif;
 }
-        </style>
-   		 <!-- Custom Theme files -->
-   		 <!---- start-smoth-scrolling---->
-		<script type="text/javascript" src="js/move-top.js"></script>
-		<script type="text/javascript" src="js/easing.js"></script>
-		<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-				});
-			});
-		</script>
-		 <!---- start-smoth-scrolling---->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-		</script>
-		<!----webfonts--->
-		
-		<!---//webfonts--->
-		<!----start-top-nav-script---->
-		<script>
-			$(function() {
-				var pull 		= $('#pull');
-					menu 		= $('nav ul');
-					menuHeight	= menu.height();
-				$(pull).on('click', function(e) {
-					e.preventDefault();
-					menu.slideToggle();
-				});
-				$(window).resize(function(){
-	        		var w = $(window).width();
-	        		if(w > 320 && menu.is(':hidden')) {
-	        			menu.removeAttr('style');
-	        		}
-	    		});
-			});
-		</script>
-		<!----//End-top-nav-script---->
-    <meta charset="gb2312">
-	</head>
-	<body>
-		<!----container---->
-		<div class="container">
-			<!----top-header---->
-			<div class="top-header">
-				<div class="logo">
-					<a href="index.html"><img src="images/logo.jpg" title="hsinping logo" /></a>
-				</div>
-				<div class="top-header-info">
-					<div class="top-contact-info">
-						<ul class="unstyled-list list-inline">
-						  <li>86 - 17806065520</li>
-						  <li><span class="mail"> </span><a href="#">1372543499@qq.com</a></li>
-						  <div class="clearfix"> </div>
-						</ul>
-					</div>
-					<div class="cart-details">
-						<div class="add-to-cart">
-							<ul class="unstyled-list list-inline">
-								<li><span class="cart"> </span>
-									<ul class="cart-sub">
-										<li><p>0 Products</p></li>
-									</ul>
-								</li>
-							</ul>
-						</div>
-						<div class="login-rigister">
-							<ul class="unstyled-list list-inline">
-								<li><a class="login" href="#">登陆</a></li>
-								<li><a class="rigister" href="#">注册 <span> </span></a></li>
-								<div class="clearfix"> </div>
-							</ul>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<!----//top-header---->
-			<!---top-header-nav---->
-			<div class="top-header-nav"> 
-			<!----start-top-nav---->
-			 <nav class="top-nav main-menu">
-					<ul class="top-nav">
-						<li><a href="#">产品 </a><span> </span></li>
-						<li><a href="#">公司</a><span> </span></li>
-						<li><a href="#">服务</a><span> </span></li>
-						<li><a href="#">品牌</a><span> </span></li>
-						<li><a href="#">关于我们</a></li>
-						<div class="clearfix"> </div>
-					</ul>
-					<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
-			  </nav>
-			  <!----End-top-nav---->
-			  <!---top-header-search-box--->
-			  <div class="top-header-search-box">
-			  	<form>
-			  		<input type="text" placeholder="Search" required / maxlength="22">
-			  		<input type="submit" value=" " >
-			  	</form>
-			  </div>
-			  <!---top-header-search-box--->
-						<div class="clearfix"> </div>
-			</div>
-		</div>
-			<!--//top-header-nav---->
-			<!----start-slider-script---->
-			<script src="js/responsiveslides.min.js"></script>
-			 <script>
-			    // You can also use "$(window).load(function() {"
-			    $(function () {
-			      // Slideshow 4
-			      $("#slider4").responsiveSlides({
-			        auto: true,
-			        pager: true,
-			        nav: true,
-			        speed: 500,
-			        namespace: "callbacks",
-			        before: function () {
-			          $('.events').append("<li>before event fired.</li>");
-			        },
-			        after: function () {
-			          $('.events').append("<li>after event fired.</li>");
-			        }
-			      });
-			
-			    });
-			  </script>
-			<!----//End-slider-script---->
-			<!-- Slideshow 4 -->
-			    <div  id="top" class="callbacks_container">
-			      <ul class="rslides" id="slider4">
-			        <li>
-			          <img src="images/slide1.png" alt="">
-			          <div class="caption">
-			          	<div class="slide-text-info">
-			          		<h1>WILL HELM</h1>
-			          		<label>WINTER</label>
-			          		<a class="slide-btn" href="#"><span>99.90$</span> <small>GET NOW</small><label> </label></a>
-			          	</div>
-			          </div>
-			        </li>
-			        <li>
-			          <img src="images/slide2.png" alt="">
-			          <div class="caption">
-			          	<div class="slide-text-info">
-			          		<h1>FAST NER2</h1>
-			          		<label>Dress Shoe</label>
-			          		<a class="slide-btn" href="#"><span>99.90$</span> <small>GET NOW</small><label> </label></a>
-			          	</div>
-			          </div>
-			        </li>
-			        <li>
-			          <img src="images/slide1.png" alt="">
-			           <div class="caption">
-			           	<div class="slide-text-info">
-			          		<h1>WILL HELM</h1>
-			          		<label>WINTER</label>
-			          		<a class="slide-btn" href="#"><span>99.90$</span> <small>GET NOW</small><label> </label></a>
-			          	</div>
-			          </div>
-			        </li>
-			      </ul>
-			    </div>
-			    <div class="clearfix"> </div>
-			<!----- //End-slider---->
-			<!----content---->
-				<div class="content">
-					<div class="container">
-				<!---top-row--->
-				<div class="top-row">
-					<div class="col-xs-4">
-						<div class="top-row-col1 text-center">
-							<h2>WOMAN</h2>
-							<img class="r-img text-center" src="images/img-w.jpg" title="name" />
-							<span><img src="images/obj1.png" title="name" /></span>
-							<h4>TOTAL</h4>
-							<label>357 PRODUCTS</label>
-							<a class="r-list-w" href="#"><img src="images/list-icon.png" title="list" /></a>
-						</div>
-					</div>
-					<div class="col-xs-4">
-						<div class="top-row-col1 text-center">
-							<h2>MAN</h2>
-							<img class="r-img text-center" src="images/man-r-img.jpg" title="name" />
-							<span><img src="images/obj2.png" title="name" /></span>
-							<h4>TOTAL</h4>
-							<label>357 PRODUCTS</label>
-							<a class="r-list-w" href="#"><img src="images/list-icon.png" title="list" /></a>
-						</div>
-					</div>
-					<div class="col-xs-4">
-						<div class="top-row-col1 text-center">
-							<h2>KIDS</h2>
-							<img class="r-img text-center" src="images/kid-r-img.jpg" title="name" />
-							<span><img src="images/obj3.png" title="name" /></span>
-							<h4>TOTAL</h4>
-							<label>357 PRODUCTS</label>
-							<a class="r-list-w" href="#"><img src="images/list-icon.png" title="list" /></a>
-						</div>
-					</div>
-					<vdi class="clearfix"> </div>
-				</div>
-				<!---top-row--->
-                <div class="copyrights">Collect from <a href="http://www.cssmoban.com/"  title="网站模板">网站模板</a></div>
-				<div class="container"> 
-				<!----speical-products---->
-				<div class="special-products">
-					<div class="s-products-head">
-						<div class="s-products-head-left">
-							<h3>SPECIAL <span>PRODUCTS</span></h3>
-						</div>
-						<div class="s-products-head-right">
-							<a href="#"><span> </span>view all products</a>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					<!----special-products-grids---->
-					<div class="special-products-grids">
-						<div class="col-md-3 special-products-grid text-center">
-							<a class="brand-name" href="#"><img src="images/b1.jpg" title="name" /></a>
-							<a class="product-here" href="#"><img src="images/p1.jpg" title="product-name" /></a>
-							<h4><a href="#">Nike Roshe Run</a></h4>
-							<a class="product-btn" href="#"><span>109.90$</span><small>GET NOW</small><label> </label></a>
-						</div>
-						<div class="col-md-3 special-products-grid text-center">
-							<a class="brand-name" href="#"><img src="images/b2.jpg" title="name" /></a>
-							<a class="product-here" href="#"><img src="images/p2.jpg" title="product-name" /></a>
-							<h4><a href="#">Line Link 67009</a></h4>
-							<a class="product-btn" href="#"><span>109.90$</span><small>GET NOW</small><label> </label></a>
-						</div>
-						<div class="col-md-3 special-products-grid text-center">
-							<a class="brand-name" href="#"><img src="images/b3.jpg" title="name" /></a>
-							<a class="product-here" href="#"><img src="images/p3.jpg" title="product-name" /></a>
-							<h4><a href="single-page.html">Minimus Zero </a></h4>
-							<a class="product-btn" href="single-page.html"><span>109.90$</span><small>GET NOW</small><label> </label></a>
-						</div>
-<div class="clearfix"> </div>
-					</div>
-					<!---//special-products-grids---->
-				</div>
-				<!---//speical-products---->
-				</div>
-			<!----content---->
-			<!----footer--->
-			<div class="footer">
-				<div class="container">
-					<div class="col-md-3 footer-logo">
-						<a href="index.html"><img src="images/logo.jpg" title="hsinping-logo" /></a>
-					</div>
-					<div class="col-md-7 footer-links">
-						<ul class="unstyled-list list-inline">
-							<li><a href="#"> Faq</a> <span> </span></li>
-							<li><a href="#"> 条款及细则 </a> <span> </span></li>
-							<li><a href="#"> 安全支付 </a> <span> </span></li>
-							<li><a href="#"> 运输 </a> <span> </span></li>
-							<li><a href="contact.html"> 联系我们 </a> </li>
-							<div class="clearfix"> </div>
-						</ul>
-					</div>
-					<div class="col-md-2 footer-social">
-						<a href="https://shop320724048.taobao.com/"><img src="images/taobao.png" title="hsinping-logo" /></a>
-						<a href="https://weidian.com/item.html?itemID=3500638975&spider_token=0c6a/"><img src="images/weidian_icon.png" width="56" height="30" alt="" /></a>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-			 </div>
-			 <div class="clearfix"> </div>
-			<!---//footer--->
-			<!---copy-right--->
-					<div class="copy-right">
-						<div class="container">
-							<p>Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://www.cssmoban.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a> - More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a></p>
-							<script type="text/javascript">
-									$(document).ready(function() {
-										/*
-										var defaults = {
-								  			containerID: 'toTop', // fading element id
-											containerHoverID: 'toTopHover', // fading element hover id
-											scrollSpeed: 1200,
-											easingType: 'linear' 
-								 		};
-										*/
-										
-										$().UItoTop({ easingType: 'easeOutQuart' });
-										
-									});
-								</script>
-							<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-						</div>
-					</div>
-			<!--//copy-right--->
-		</div>
-		<!----container---->
-	
+</style>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- Navigation
+    ==========================================-->
+<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+  <div class="container"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand page-scroll" href="#page-top">Hsinping Furniture</a> </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about" class="page-scroll">关于</a></li>
+        <li><a href="#services" class="page-scroll">服务</a></li>
+        <li><a href="#portfolio" class="page-scroll">项目</a></li>
+        <li><a href="#team" class="page-scroll">团队</a></li>
+        <li><a href="#contact" class="page-scroll">联系</a></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+</nav>
+<!-- Header -->
+<header id="header">
+  <div class="intro">
+    <div class="overlay">
+      <div class="container">
+        <div class="row">
+          <div class="intro-text">
+            <h1><strong>Hsinping</strong> <span>-</span> 时尚家居</h1>
+            <p>品质家居  用心更舒心</p>
+            <a href="#about" class="btn btn-custom btn-lg page-scroll">了解更多</a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- About Section -->
+<div id="about">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2>我们的故事</h2>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-6 text-center"> <img src="img/about.jpg" class="img-responsive" alt=""> </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="about-text">
+          <h3>企业介绍</h3>
+          <p> &nbsp; 鑫镔梓店创建于2009年，从一家从事床垫生产，沙发翻新的门店发展为一家集软床家具设计，研发、生产和销售于一体的企业。本厂生产的“鑫镔金鹏”牌沙发、床垫质量优良，款式新颖，做工严谨赢得了客商的一致认可，又因售后服务系统深受广大消费者信赖，产品逐步走向海外。</p>
+          <h3>业务范畴</h3>
+          <p>主营：定做、批发销售 鑫镔金鹏 Hsinping 沙发、床垫 </p>
+          <p>批发零售实木床、软包床 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Services Section -->
+<div id="services">
+  <div class="container">
+    <div class="col-md-10 col-md-offset-1 section-title text-center">
+      <h2>我们的服务</h2>
+      <hr>
+      <p>鑫镔金鹏家居 Hsinping Furniture 用心更舒心</p>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 service"> <a href="https://item.taobao.com/item.htm?spm=2013.1.20141001.2.1fc76173FOlPs1&id=616132913274&scm=1007.12144.95220.42296_0_0&pvid=1c4ebdb4-ad22-4f4e-a7ce-8605913cfd91&utparam=%7B"x_hestia_source"%3A"42296"%2C"x_object_type"%3A"item"%2C"x_mt"%3A5%2C"x_src"%3A"42296"%2C"x_pos"%3A2%2C"x_pvid"%3A"1c4ebdb4-ad22-4f4e-a7ce-8605913cfd91"%2C"x_object_id"%3A616132913274%7D" title="淘宝店铺" ><img src="img/mattress-design.jpg" class="img-responsive" alt="乳胶绵床垫">
+        <h3>乳胶绵床垫</h3>
+        <p> 鑫镔金鹏弹簧层与新型3E椰棕层相结合，构成硬而不僵的呵护系统。 &nbsp; &nbsp; 多层椰丝纤维形成百万弹簧支持点，释放脊椎压力。为腰椎不好的老人和身体正在发育的儿童提供更好的承托力。</p>
+      </a>
+      </div>
+      <div class="col-xs-12 col-sm-4 service"> <a href="https://item.taobao.com/item.htm?spm=2013.1.20141001.4.65d75c1fN4nAxn&id=613339548881&scm=1007.12144.95220.42296_0_0&pvid=def62b67-dc69-446f-9f3b-c270597f6775&utparam=%7B%22x_hestia_source%22%3A%2242296%22%2C%22x_object_type%22%3A%22item%22%2C%22x_mt%22%3A5%2C%22x_src%22%3A%2242296%22%2C%22x_pos%22%3A4%2C%22x_pvid%22%3A%22def62b67-dc69-446f-9f3b-c270597f6775%22%2C%22x_object_id%22%3A613339548881%7D" title="淘宝店铺" ><img src="img/sofa-design2.jpg" class="img-responsive" alt="布艺沙发">
+        <h3>沙发</h3>
+        <p>宽大尺寸 幸福够大</p>
+        <p>内部实木材料，熏蒸干燥处理 木架牢固耐用</p>
+        <p>可拆洗设计 晾晒杀菌 </p>
+      </a>
+      </div>
+      <div class="col-xs-12 col-sm-4 service"> <a href="https://item.taobao.com/item.htm?spm=a1z10.1-c-s.w4004-22578346757.6.727d597cDP7SYp&id=616207333233" title="淘宝店铺" ><img src="img/zong-design.jpg" class="img-responsive" alt="椰棕床垫">
+        <h3>棕垫</h3>
+        <p>3E环保椰棕床垫层层透气 层层呼吸&nbsp;</p>
+      </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Portfolio Section -->
+<div id="portfolio">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2>产品</h2>
+      <hr>
+</div>
+<div class="categories"> </div>
+    <div class="row">
+      <div class="portfolio-items">
+        <div class="col-sm-6 col-md-4 col-lg-4 residential">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/1-L.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>乳胶款床垫</h4>
+              </div>
+              <img src="img/portfolio/1-s.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4 commercial">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/2-L.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>毛巾绵床垫-折叠款</h4>
+              </div>
+              <img src="img/portfolio/2-s.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4 residential">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/3-L.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>床垫厚度实拍</h4>
+              </div>
+              <img src="img/portfolio/3-s.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4 residential">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/4-L.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>棉麻布艺沙发</h4>
+              </div>
+              <img src="img/portfolio/4-s.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4 commercial">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/5-L.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>3E环保棕垫</h4>
+              </div>
+              <img src="img/portfolio/5-s.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4 office">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/6-L.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>欧式软包床</h4>
+              </div>
+              <img src="img/portfolio/6-s.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+</div>
+    </div>
+  </div>
+</div>
+<div class="tlinks">Collect from <a href="http://www.cssmoban.com/"  title="网站模板">网站模板</a></div>
+<!-- Team Section -->
+<div id="team" class="text-center">
+  <div class="overlay">
+    <div class="container">
+      <div class="col-md-8 col-md-offset-2 section-title">
+        <h2>了解团队</h2>
+        <hr>
+        <p>厂家直销家居.一件也是批发价格，品质保证</p>
+        <p>用心制造，只为让每一位顾客更舒心＾０＾~ </p>
+      </div>
+      <div id="row">
+        <div class="col-md-3 col-sm-6 team">
+          <div class="thumbnail"> <img src="img/team/1.jpg" alt="..." class="team-img">
+            <div class="caption">
+              <h3>刘保松</h3>
+              <p>技术部</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 team">
+          <div class="thumbnail"> <img src="img/team/2.jpg" alt="..." class="img-circle team-img">
+            <div class="caption">
+              <h3>刘金燕</h3>
+              <p>生产部&nbsp;</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 team">
+          <div class="thumbnail"> <img src="img/team/3.jpg" alt="..." class="img-circle team-img">
+            <div class="caption">
+              <h3>刘大鹏</h3>
+              <p>运输部</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 team">
+          <div class="thumbnail"> <img src="img/team/4.jpg" alt="..." class="img-circle team-img">
+            <div class="caption">
+              <h3>Ruth</h3>
+              <p>海外部</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Contact Section -->
+<div id="contact">
+  <div class="container">
+    <div class="section-title text-center">
+      <h2>联系我们</h2>
+      <hr>
+      <p>鑫镔金鹏家居竭诚为您服务</p>
+    </div>
+    <div class="col-md-4">
+      <h3>公司信息</h3>
+      <div class="contact-item"> <span>地址</span>
+        <p>菏泽牡丹区黄河路与牡丹路交叉口向西90米路北,<br>
+          鑫镔梓店沙发床垫</p>
+      </div>
+      <div class="contact-item"> <span>邮箱</span>
+        <p>1372543499@qq.com</p>
+      </div>
+      <div class="contact-item"> <span>手机</span>
+        <p> +86 178 0606 5520</p>
+        <p> +86 150 9820 3830</p>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <h3>留言</h3>
+      <form name="sentMessage" id="contactForm" novalidate>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="text" id="name" class="form-control" placeholder="名字" required="required">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="email" id="email" class="form-control" placeholder="邮箱" required="required">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <textarea name="message" id="message" class="form-control" rows="4" placeholder="文本" required></textarea>
+          <p class="help-block text-danger"></p>
+        </div>
+        <div id="success"></div>
+        <button type="submit" class="btn btn-custom btn-lg">发送消息</button>
+      </form>
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <div class="container text-center">
+    <div class="social">
+      <ul>
+       <div class="fl">分享到：</div> 
+<div onclick="shareTo('qzone')">     
+    <img src="http://zixuephp.net/static/images/qqzoneshare.png" width="30">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="http://zixuephp.net/static/images/qqshare.png" width="32"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="http://zixuephp.net/static/images/sinaweiboshare.png" width="36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="http://zixuephp.net/static/images/wechatshare.png" width="32">  
+</div> 
+
+       
+     
+      </ul>
+    </div>
+    <div>
+      <p>&copy;2020-2023 Hsinping Furniture,All rights reserved. <a href="https://shop320724048.taobao.com" target="_blank" title="鑫镔金鹏家居">鑫镔金鹏家居</a></p>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/SmoothScroll.js"></script> 
+<script type="text/javascript" src="js/nivo-lightbox.js"></script> 
+<script type="text/javascript" src="js/jquery.isotope.js"></script> 
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
+<script type="text/javascript" src="js/contact_me.js"></script> 
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
-
